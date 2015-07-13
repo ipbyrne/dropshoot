@@ -1,0 +1,29 @@
+{
+    "playerData" : [
+        {"x": 240, "y": 0}
+    ],
+    "backgroundData": [
+      {"x": 0, "y": 0, "key": "background"}
+    ],
+    "platformData": [
+      {"x": 380, "y": 316, "key": "ground"},
+      {"x": 100, "y": 316, "key": "ground"},
+      {"x": 240, "y": 60, "key": "platform180"},
+      {"x": 340, "y": 140, "key": "platform120"},
+      {"x": 140, "y": 140, "key": "platform120"},
+      {"x": 420, "y": 220, "key": "platform120"},
+      {"x": 60, "y": 220, "key": "platform120"}
+    ],
+  "enemyData": [
+     {"x": 180, "y": 124, "health": 10, "key": "enemy", "scale": 2, "range": 70, "speed": 70, "time": 0},
+     {"x": 340, "y": 124, "health": 10, "key": "enemy", "scale": 1, "range": 50, "speed": 100, "time": 0},
+     {"x": 60, "y": 204, "health": 10, "key": "enemy", "scale": 1, "range": 50, "speed": 70, "time": 0},
+     {"x": 420, "y": 204, "health": 10, "key": "enemy", "scale": 1, "range": 50, "speed": 100, "time": 0}
+  ],
+    "flyingEnemyData": [
+     {"x": 180, "y": 124, "health": 0, "key": "enemy", "scale": 0.5, "range": 70, "speedX": 70, "speedY": 70, "time": 0},
+     {"x": 180, "y": 124, "health": 0, "key": "enemy", "scale": 0.5, "range": -70, "speedX": -70, "speedY": 70, "time": 0},
+     {"x": 180, "y": 124, "health": 0, "key": "enemy", "scale": 0.5, "range": -70, "speedX": -70, "speedY": 70, "time": 0},
+     {"x": 180, "y": 124, "health": 0, "key": "enemy", "scale": 0.5, "range": -70, "speedX": -70, "speedY": 70, "time": 0}
+  ]
+}
