@@ -205,6 +205,7 @@ DropShoot.GameState = {
         if(this.game.physics.arcade.collide(this.player, this.platforms)) {
             if(this.speedBoost == 0) {
                 this.player.body.velocity.x = this.playerSpeed;
+                this.bulletXSpeed = 3;
             } else if(this.speedBoost > 0) {
                 this.player.body.velocity.x = this.playerSpeed *1.5;
                 this.bulletXSpeed = 5.5;
