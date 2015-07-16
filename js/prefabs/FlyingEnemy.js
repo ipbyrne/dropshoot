@@ -69,13 +69,17 @@ DropShoot.FlyingEnemy.prototype.update = function() {
     }
 };
 
-DropShoot.FlyingEnemy.prototype.reset = function(x, y, health, key, scale, range, speedX, speedY, shoot,time) {
+DropShoot.FlyingEnemy.prototype.reset = function(x, y, health, key, scale, range, speedX, speedY, shoot,time, boss) {
     Phaser.Sprite.prototype.reset.call(this, x, y, health);
     this.loadTexture(key);
     this.scale.setTo(scale);
     this.speedX = speedX;
     this.speedY = speedY;
     this.shooter = shoot;
+    this.boss = boss;
+    this.sx = x;
+    this.sy = y;
+    this.startingHealth = health;
     this.body.velocity.x = this.speedX;
     this.body.allowGravity = false;
     this.body.velocity.y = this.speedY;
@@ -95,7 +99,6 @@ DropShoot.FlyingEnemy.prototype.shoot = function() {
     }
     // if its false it sets it to true and runs the shoot method only once until this.quit is turned back onto false;
     this.quit = true;
-    console.log('test');
     var febullet = this.flyingEnemyBullets.getFirstExists(false);
     if(!febullet) {
         febullet = new DropShoot.FlyingEnemyBullet(this.game, this.x, this.y, this.fbulletSpeed);

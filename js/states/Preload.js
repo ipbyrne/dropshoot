@@ -13,7 +13,10 @@ DropShoot.PreloadState = {
         this.load.image('bullet', 'assets/images/bullet.png');
         this.load.image('enemy', 'assets/images/enemy.png');
         this.load.image('enemyParticle', 'assets/images/enemyParticle.png');
-        
+        this.load.image('shieldPowerUpParticle', 'assets/images/shieldPowerUpParticle.png');
+        this.load.image('shieldPowerUp', 'assets/images/shieldPowerUp.png');
+        this.load.image('speedBoost', 'assets/images/speedBoost.png');
+        this.load.image('speedBoostParticle', 'assets/images/speedBoostParticle.png');
         // Level Select Screen
         this.load.spritesheet('levels', 'assets/images/levels.png', 64, 64);
         this.load.spritesheet('level_arrows', 'assets/images/level_arrows.png', 48, 48);

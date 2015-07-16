@@ -15,15 +15,27 @@
       {"x": 60, "y": 220, "key": "platform120"}
     ],
   "enemyData": [
-     {"x": 180, "y": 124, "health": 10, "key": "enemy", "scale": 2, "range": 70, "speed": 70,"shoot": 0, "time": 0},
-     {"x": 340, "y": 124, "health": 10, "key": "enemy", "scale": 1, "range": 50, "speed": 100,"shoot": 0,"time": 1},
-     {"x": 60, "y": 204, "health": 10, "key": "enemy", "scale": 1, "range": 50, "speed": 70,"shoot": 0, "time": 3},
-     {"x": 420, "y": 204, "health": 10, "key": "enemy", "scale": 1, "range": 50, "speed": 100,"shoot": 0, "time": 4}
+     {"x": 180, "y": 112, "health": 20, "key": "enemy", "scale": 2, "range": 70, "speed": 70,"shoot": 0, "time": 0, "boss": 1},
+     {"x": 340, "y": 124, "health": 10, "key": "enemy", "scale": 1, "range": 50, "speed": 100,"shoot": 0,"time": 1, "boss": 0},
+     {"x": 60, "y": 204, "health": 10, "key": "enemy", "scale": 1, "range": 50, "speed": 70,"shoot": 0, "time": 3, "boss": 0},
+     {"x": 420, "y": 204, "health": 10, "key": "enemy", "scale": 1, "range": 50, "speed": 100,"shoot": 0, "time": 4, "boss": 0}
   ],
     "flyingEnemyData": [
-     {"x": 180, "y": 124, "health": 0, "key": "enemy", "scale": 0.5, "range": 70, "speedX": 70, "speedY": 70, "shoot": 0, "time": 0},
-     {"x": 180, "y": 124, "health": 0, "key": "enemy", "scale": 0.5, "range": -70, "speedX": -70, "speedY": 70,"shoot": 0, "time": 1},
-     {"x": 180, "y": 124, "health": 0, "key": "enemy", "scale": 0.5, "range": -70, "speedX": -70, "speedY": 70,"shoot": 0, "time": 3},
-     {"x": 180, "y": 124, "health": 0, "key": "enemy", "scale": 0.5, "range": -70, "speedX": -70, "speedY": 70,"shoot": 0, "time": 4}
+     {"x": 0, "y": 0, "health": 0, "key": "enemy", "scale": 0.5, "range": 70, "speedX": 70, "speedY": 70, "shoot": 0, "time": 0, "boss": 0},
+     {"x": 0, "y": 0, "health": 0, "key": "enemy", "scale": 0.5, "range": -70, "speedX": -70, "speedY": 70,"shoot": 0, "time": 1, "boss": 0},
+     {"x": 0, "y": 0, "health": 0, "key": "enemy", "scale": 0.5, "range": -70, "speedX": -70, "speedY": 70,"shoot": 0, "time": 3, "boss": 0},
+     {"x": 0, "y": 0, "health": 0, "key": "enemy", "scale": 0.5, "range": -70, "speedX": -70, "speedY": 70,"shoot": 0, "time": 4, "boss": 0}
+  ],
+    "shieldPowerUpData": [
+     {"x": 0, "y": 0, "health": 0, "key": "shieldPowerUp", "scale": 0.25, "range": 70, "speedX": 70, "speedY": 70, "time": 0},
+     {"x": 0, "y": 0, "health": 1, "key": "shieldPowerUp", "scale": 0.25, "range": -70, "speedX": -70, "speedY": 70,"time": 1},
+     {"x": 0, "y": 0, "health": 0, "key": "shieldPowerUp", "scale": 0.5, "range": -70, "speedX": -70, "speedY": 70,"time": 3},
+     {"x": 0, "y": 0, "health": 0, "key": "shieldPowerUp", "scale": 0.5, "range": -70, "speedX": -70, "speedY": 70,"time": 4}
+  ],
+    "speedBoostData": [
+     {"x": 0, "y": 0, "health": 0, "key": "speedBoost", "scale": 0.25, "range": 70, "speedX": 70, "speedY": 70, "time": 0},
+     {"x": 300, "y": 100, "health": 1, "key": "speedBoost", "scale": 0.25, "range": -70, "speedX": -70, "speedY": -70,"time": 1},
+     {"x": 0, "y": 0, "health": 0, "key": "speedBoost", "scale": 0.5, "range": -70, "speedX": -70, "speedY": 70,"time": 3},
+     {"x": 0, "y": 0, "health": 0, "key": "speedBoost", "scale": 0.5, "range": -70, "speedX": -70, "speedY": 70,"time": 4}
   ]
 }

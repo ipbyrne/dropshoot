@@ -90,19 +90,20 @@ DropShoot.LevelState = {
     },
     changeThumb: function() {        
      if(this.currentLevel) {
-            
             if(this.playerLives >= 1) {
-                console.log('3 Stars');
-                // Changes the next levels thumbnail to playable if last level was complete.
-                
                 // Changes the previous thumbnail to be  eqaul to the PlayerLives
+                // If the previous current level frame is less than the player lives just scored
                 if(this.starsArray[this.currentLevel-1] < this.playerLives) {
+                    // set the frame equal to the players lives.
                     this.starsArray[this.currentLevel-1] = this.playerLives;
                 }
+                // Sets the next current level frame to 0 if it is at 4(locked screen)
                 if(this.starsArray[this.currentLevel] > 3) {
                     this.starsArray[this.currentLevel] = 0;
                 }
+                // Remove the previous locally stored starsArray
                 localStorage.removeItem(this.starsArray);
+                // Add new array to the local storage.
                 localStorage['starsArray'] = JSON.stringify(this.starsArray);
             }
         }

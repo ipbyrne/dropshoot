@@ -46,7 +46,7 @@ DropShoot.Enemy.prototype.update = function() {
         }
 };
 
-DropShoot.Enemy.prototype.reset = function(x, y, health, key, scale, range, speed, shoot, time) {
+DropShoot.Enemy.prototype.reset = function(x, y, health, key, scale, range, speed, shoot, time, boss) {
     Phaser.Sprite.prototype.reset.call(this, x, y, health);
     this.loadTexture(key);
     this.scale.setTo(scale);
@@ -54,8 +54,11 @@ DropShoot.Enemy.prototype.reset = function(x, y, health, key, scale, range, spee
     this.body.velocity.x = this.speed;
     this.body.immoveable = true;
     this.sx = x;
+    this.sy =y;
+    this.startingHealth = health;
     this.range = range;
     this.shooter = shoot;
+    this.boss = boss;
     this.enemyTimer.resume();
 };
 
