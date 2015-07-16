@@ -207,6 +207,7 @@ DropShoot.GameState = {
                 this.player.body.velocity.x = this.playerSpeed;
             } else if(this.speedBoost > 0) {
                 this.player.body.velocity.x = this.playerSpeed *1.5;
+                this.bulletXSpeed = 5.5;
             }
             this.onPlatform = true;
             if(this.readyToFire) {
